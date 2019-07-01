@@ -1,0 +1,10 @@
+[2019-07-01 21:10:24] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: {closure}(): Failed opening required '/var/www/empresarial/devbrotherhood/lumen-swagger/bootstrap/../app/Http/routes.php' (include_path='.:/usr/share/php') in /var/www/empresarial/devbrotherhood/lumen-swagger/bootstrap/app.php:103
+Stack trace:
+#0 /var/www/empresarial/devbrotherhood/lumen-swagger/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2019-07-01 21:10:29] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: {closure}(): Failed opening required '/var/www/empresarial/devbrotherhood/lumen-swagger/bootstrap/../app/Http/routes.php' (include_path='.:/usr/share/php') in /var/www/empresarial/devbrotherhood/lumen-swagger/bootstrap/app.php:103
+Stack trace:
+#0 /var/www/empresarial/devbrotherhood/lumen-swagger/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
