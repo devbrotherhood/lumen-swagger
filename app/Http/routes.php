@@ -22,59 +22,45 @@ $app->get('/', function () use ($app) {
 });
 
 /**
- * post createUser
- * Summary: Create user
- * Notes: This can only be done by the logged in user.
+ * post autenticar
+ * Summary: Obtém as informações do usuário
+ * Notes: Obtém as informações do usuário
  * Output-Formats: [application/xml, application/json]
  */
-$app->post('/v1/user', 'UserApi@createUser');
+$app->post('/v1/autenticacao', 'AutenticaoApi@autenticar');
 /**
- * post createUsersWithArrayInput
- * Summary: Creates list of users with given input array
+ * get logoff
+ * Summary: Remove a autenticação do usuário logado
  * Notes: 
  * Output-Formats: [application/xml, application/json]
  */
-$app->post('/v1/user/createWithArray', 'UserApi@createUsersWithArrayInput');
+$app->get('/v1/autenticacao', 'AutenticaoApi@logoff');
 /**
- * post createUsersWithListInput
- * Summary: Creates list of users with given input array
+ * post criarUsuario
+ * Summary: Criar um novo usuario
+ * Notes: Funcionalidade para cadastrar usuário.
+ * Output-Formats: [application/xml, application/json]
+ */
+$app->post('/v1/usuario', 'UsurioApi@criarUsuario');
+/**
+ * put atualizarUsuario
+ * Summary: Altera as informações do usuário
+ * Notes: Isso só pode ser feito pelo usuário logado.
+ * Output-Formats: [application/xml, application/json]
+ */
+$app->put('/v1/usuario/{co_usuario}', 'UsurioApi@atualizarUsuario');
+/**
+ * get obterUsuario
+ * Summary: Obtém informações do usuário à partir do identificador
  * Notes: 
  * Output-Formats: [application/xml, application/json]
  */
-$app->post('/v1/user/createWithList', 'UserApi@createUsersWithListInput');
+$app->get('/v1/usuario/{co_usuario}', 'UsurioApi@obterUsuario');
 /**
- * get loginUser
- * Summary: Logs user into the system
- * Notes: 
+ * delete removerUsuario
+ * Summary: Remove um usuário
+ * Notes: Isso só pode ser feito pelo usuário logado.
  * Output-Formats: [application/xml, application/json]
  */
-$app->get('/v1/user/login', 'UserApi@loginUser');
-/**
- * get logoutUser
- * Summary: Logs out current logged in user session
- * Notes: 
- * Output-Formats: [application/xml, application/json]
- */
-$app->get('/v1/user/logout', 'UserApi@logoutUser');
-/**
- * delete deleteUser
- * Summary: Delete user
- * Notes: This can only be done by the logged in user.
- * Output-Formats: [application/xml, application/json]
- */
-$app->delete('/v1/user/{username}', 'UserApi@deleteUser');
-/**
- * get getUserByName
- * Summary: Get user by user name
- * Notes: 
- * Output-Formats: [application/xml, application/json]
- */
-$app->get('/v1/user/{username}', 'UserApi@getUserByName');
-/**
- * put updateUser
- * Summary: Updated user
- * Notes: This can only be done by the logged in user.
- * Output-Formats: [application/xml, application/json]
- */
-$app->put('/v1/user/{username}', 'UserApi@updateUser');
+$app->delete('/v1/usuario/{co_usuario}', 'UsurioApi@removerUsuario');
 
