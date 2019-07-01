@@ -23,14 +23,14 @@ $app->get('/', function () use ($app) {
 
 /**
  * post autenticar
- * Summary: Obtém as informações do usuário
- * Notes: Obtém as informações do usuário
+ * Summary: Obtém as informações do Usuario
+ * Notes: Obtém as informações do Usuario
  * Output-Formats: [application/xml, application/json]
  */
 $app->post('/v1/autenticacao', 'AutenticaoApi@autenticar');
 /**
  * get logoff
- * Summary: Remove a autenticação do usuário logado
+ * Summary: Remove a autenticação do Usuario logado
  * Notes: 
  * Output-Formats: [application/xml, application/json]
  */
@@ -38,29 +38,29 @@ $app->get('/v1/autenticacao', 'AutenticaoApi@logoff');
 /**
  * post criarUsuario
  * Summary: Criar um novo usuario
- * Notes: Funcionalidade para cadastrar usuário.
+ * Notes: Funcionalidade para cadastrar Usuario.
  * Output-Formats: [application/xml, application/json]
  */
-$app->post('/v1/usuario', 'UsurioApi@criarUsuario');
+$app->post('/v1/usuario', 'UsuarioApi@criarUsuario');
 /**
  * put atualizarUsuario
- * Summary: Altera as informações do usuário
- * Notes: Isso só pode ser feito pelo usuário logado.
+ * Summary: Altera as informações do Usuario
+ * Notes: Isso só pode ser feito pelo Usuario logado.
  * Output-Formats: [application/xml, application/json]
  */
-$app->put('/v1/usuario/{co_usuario}', 'UsurioApi@atualizarUsuario');
+$app->put('/v1/usuario/{co_usuario}', 'UsuarioApi@atualizarUsuario');
 /**
  * get obterUsuario
- * Summary: Obtém informações do usuário à partir do identificador
+ * Summary: Obtém informações do Usuario à partir do identificador
  * Notes: 
  * Output-Formats: [application/xml, application/json]
  */
-$app->get('/v1/usuario/{co_usuario}', 'UsurioApi@obterUsuario');
+$app->get('/v1/usuario/{co_usuario}', 'UsuarioApi@obterUsuario');
 /**
  * delete removerUsuario
- * Summary: Remove um usuário
- * Notes: Isso só pode ser feito pelo usuário logado.
+ * Summary: Remove um Usuario
+ * Notes: Isso só pode ser feito pelo Usuario logado.
  * Output-Formats: [application/xml, application/json]
  */
-$app->delete('/v1/usuario/{co_usuario}', 'UsurioApi@removerUsuario');
+$app->delete('/v1/usuario/{co_usuario}', 'UsuarioApi@removerUsuario');
 

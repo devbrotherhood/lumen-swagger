@@ -17,7 +17,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Request;
 
-class UsurioApi extends Controller
+class UsuarioApi extends Controller
 {
     /**
      * Constructor
@@ -53,9 +53,9 @@ class UsurioApi extends Controller
     /**
      * Operation atualizarUsuario
      *
-     * Altera as informações do usuário.
+     * Altera as informações do Usuario.
      *
-     * @param string $co_usuario Identificador do usuário (required)
+     * @param string $co_usuario Identificador do Usuario (required)
      *
      * @return Http response
      */
@@ -73,9 +73,9 @@ class UsurioApi extends Controller
     /**
      * Operation obterUsuario
      *
-     * Obtém informações do usuário à partir do identificador.
+     * Obtém informações do Usuario à partir do identificador.
      *
-     * @param string $co_usuario Identificador do usuário que deseja encontrar (required)
+     * @param string $co_usuario Identificador do Usuario que deseja encontrar (required)
      *
      * @return Http response
      */
@@ -93,9 +93,9 @@ class UsurioApi extends Controller
     /**
      * Operation removerUsuario
      *
-     * Remove um usuário.
+     * Remove um Usuario.
      *
-     * @param string $co_usuario Identificador do usuário (required)
+     * @param string $co_usuario Identificador do Usuario (required)
      *
      * @return Http response
      */

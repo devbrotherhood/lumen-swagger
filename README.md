@@ -16,3 +16,8 @@ This example uses the [Lumen Framework](http://lumen.laravel.com/).  To see how 
 
 Using `composer install` to install the framework and dependencies via [Composer](http://getcomposer.org/).
 
+### Run
+
+```console
+php -S 127.0.0.1:8000 -t public/
+```

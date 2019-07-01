@@ -29,7 +29,7 @@ class AutenticaoApi extends Controller
     /**
      * Operation autenticar
      *
-     * Obtém as informações do usuário.
+     * Obtém as informações do Usuario.
      *
      *
      * @return Http response
@@ -58,7 +58,7 @@ class AutenticaoApi extends Controller
     /**
      * Operation logoff
      *
-     * Remove a autenticação do usuário logado.
+     * Remove a autenticação do Usuario logado.
      *
      *
      * @return Http response
